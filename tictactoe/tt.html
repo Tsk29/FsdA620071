@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tt.css">
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <p>Select a mode:</p>
+    <div class="inp">
+        <form>
+            <input type="radio" id="human" name="mode" value="human" checked>
+            <label for="human">Human vs. Human</label><br>
+            <input type="radio" id="computer" name="mode" value="computer">
+            <label for="computer">Human vs. Computer</label><br>
+        </form>
+    </div>
+    <div class="game-board">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <div class="button" style="text-align:center">
+        <button onclick="resetGame()">ReStart</button>
+
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="modal-message"></span>
+            <button onclick="resetGame()" class="modal-button">Play again?</button>
+        </div>
+    </div>
+    <script src="tt2.js"></script>
+</body>
+
+</html>
