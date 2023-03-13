@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Album</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        @media (min-width: 576px) {
+            .col-sm-6 {
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .col-md-4 {
+                flex-basis: 33.33%;
+                max-width: 33.33%;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .col-lg-3 {
+                flex-basis: 25%;
+                max-width: 25%;
+            }
+        }
+        
+        body {
+            background-color: black
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Luckiest Guy', cursive;
+            color: white;
+            font-size: 60px;
+        }
+        
+        h2 {
+            text-align: center;
+            font-family: 'Luckiest Guy', cursive;
+            color: white;
+            font-size: 40px;
+        }
+        
+        #inputimg {
+            text-align: center;
+            font-family: 'Luckiest Guy', cursive;
+            color: black;
+            font-size: 20px;
+        }
+        
+        #Select {
+            text-align: center;
+            font-family: 'Luckiest Guy', cursive;
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My Photo Album</h1>
+        <h2>Tharun S Kumar </h2>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="b.jpeg" alt="Image 1" id="i1">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="cd.jpeg" alt="Image 2" id="i2">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="de.jpeg" alt="Image 3" id="i3">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="fep.jpeg" alt="Image 4" id="i4">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="fg.jpeg" alt="Image 5" id="i5">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="Royal Enfield Classic 500 Bobber.jpeg" alt="Image 6" id="i6">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="amp.jpg" alt="Image 7" id="i7">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="tig.jpg" alt="Image 8" id="i8">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="Amrita Vishwa Vidyapeetham.jpeg" alt="Image 10" id="i9">
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="download.jpeg" alt="Image 11" id="i10">
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="fpb.jpeg" alt="Image 12" id="i11">
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="an.jpg" alt="Image 13" id="i12">
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="kk.jpg" alt="Image 14" id="i13">
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="kj.jpeg" alt="Image 15" id="i14">
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="blue.jpeg" alt="Image 16" id="i15">
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <img src="cake.jpeg" alt="Image 17" id="i16">
+
+            </div>
+        </div>
+        <br>
+        <div id="inputimg">
+            <form>
+
+                <input type="text" id="input" name="input" placeholder="Enter  image no [(i+imgno)] ">
+                <button type="submit" value="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div id="Select">
+        <form>
+            <select name="operation">
+            <option value="rbg ">Check if  image is reddish, blueish or greenish? </option>
+            <option value="Mrbg">Make image reddish, blueish or greenish</option>
+            <option value="D">Duplicate an image</option>
+            <option value="Br">Increase the brightness of an image. </option>
+            <option value="rr">Reduce the resolution of an image</option>
+            <option value="av">Create an avatar from an image. </option>
+            <option value="g">RGB image to Gray scale image. </option>
+            <option value="qr ">Generate QR code from an image. </option>
+            <option value="th">Create thumb nails of the images </option>
+        </select>
+            <input type="submit">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
