@@ -15,18 +15,44 @@
     }
     
     body {
-        background-color: aliceblue;
+        font-family: 'Luckiest Guy', cursive;
+        color: whitesmoke;
+        background-color: black;
     }
     
     #About {
         font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black
+    }
+    
+    #b {
+        text-align: center;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 50px;
+    }
+    
+    #gif:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    #gif {
+        width: 200px;
+        /* set the width to 50 pixels */
+        height: 200px;
+        /* set the height to 50 pixels */
+    }
+    
+    #gg {
+        border: 2px aqua;
     }
 </style>
 
 
 <body>
+
     <div class="container">
-        <h1 class="display-1 text-center">My Profile</h1>
+        <h1 class="display-1 text-center" id="b">My Profile</h1>
         <div class="col-md-4">
             <img style="width:400px" class="a" src="now.jpeg" alt="Profile Picture">
         </div>
@@ -87,13 +113,13 @@
             <div id="projects">
                 <h2>Projects</h2>
 
-                <h3>TIC TAC TOE GAME</h3>
-                <p><a href="https://tsk29.github.io/FsdA6_aie20071/tictactoe/tt.html"><b>Tictac toe</b></a></p>
+                <h3 id="gg">TIC TAC TOE GAME</h3>
+                <p><a href="https://tsk29.github.io/FsdA6_aie20071/tictactoe/tt.html"><b><img id="gif" src="tic.jpg" ></b></a></p>
 
-                <h3>WORDLE GAME</h3>
-                <p><a href="https://tsk29.github.io/FsdA6_aie20071/wordle/w.html"><b>Wordle</b></a>.</p>
-                <h3>PHOTO ALBUM</h3>
-                <p><a href="https://tsk29.github.io/FsdA6_aie20071/Photo/npa.html"><b>Photo Album</b></a>.</p>
+                <h3 id="gg">WORDLE GAME</h3>
+                <p><a href="https://tsk29.github.io/FsdA6_aie20071/wordle/w.html"><b><img id="gif" src="word.jpg" ></b></a>.</p>
+                <h3 id="gg">PHOTO ALBUM</h3>
+                <p><a href="https://tsk29.github.io/FsdA6_aie20071/Photo/npa.html"><b><img id="gif" src="ppp.jpg" ></b></a>.</p>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
