@@ -82,11 +82,12 @@
         }
         
         button {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             padding: 0.5rem 1rem;
             border: none;
             border-radius: 0.5rem;
-            background-color: #eee;
-            color: #333;
+            background-color: whitesmoke;
+            color: black;
             font-size: 1rem;
             cursor: pointer;
             transition: transform 0.2s ease-in-out;
@@ -112,7 +113,15 @@
             transform: scale(1.1);
         }
         
-        .resolution-btn:hover {
+        .negative-btn {
+            background-color: #9bc3ff;
+        }
+        
+        .grayscale-btn {
+            background-color: grey;
+        }
+        
+        .negative-btn:hover {
             transform: scale(1.1);
         }
         
@@ -204,28 +213,13 @@
         </div> -->
     </div>
     <br>
-    <!-- <div id="Select">
-        <form>
-            <select name="operation">
-            <option value="rbg ">Check if  image is reddish, blueish or greenish? </option>
-            <option value="Mrbg">Make image reddish, blueish or greenish</option>
-            <option value="D">Duplicate an image</option>
-            <option value="Br">Increase the brightness of an image. </option>
-            <option value="rr">Reduce the resolution of an image</option>
-            <option value="av">Create an avatar from an image. </option>
-            <option value="g">RGB image to Gray scale image. </option>
-            <option value="qr ">Generate QR code from an image. </option>
-            <option value="th">Create thumb nails of the images </option>
-        </select>
-            <input type="submit">
-        </form>
-    </div> -->
+    
     <div class="button-container">
         <button class="color-btn reddish">Reddish</button>
         <button class="color-btn blueish">Blueish</button>
         <button class="color-btn greenish">Greenish</button>
         <button class="brightness-btn">Increase the brightness</button>
-        <button class="resolution-btn">Reduce the resolution</button>
+        <button class="negative-btn">Image Negative</button>
         <button class="grayscale-btn">Gray scale</button>
         <button class="thumbnail-btn">Create thumbnails</button>
     </div>
